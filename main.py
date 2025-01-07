@@ -1,6 +1,7 @@
 import pygame
 from random import randint
 from time import sleep
+import sys
 print("hello to my game.im bardia mehrju.")
 print("rules:")
 print("1.if you have six you will have a second turn.")
@@ -142,7 +143,7 @@ while True:
             if dicen!=6:
              turn=2
          elif turn==2:
-           if (p2x,p2y)==(5,0):
+           if (p2x,p2y)==(30,0):
                 print("player 2 won the game")
                 break
            dicen=randint(1,6)
@@ -217,7 +218,7 @@ while True:
                     screen.blit(board,(0,0))
                     screen.blit(p2,(p2x,p2y))
                     screen.blit(p1,(p1x,p1y))        
-            if (p2x,p2y)==(5,0):
+            if (p2x,p2y)==(30,0):
                 print("player 2 won the game")
                 break        
             move-=66
